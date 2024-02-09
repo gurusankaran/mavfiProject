@@ -1,0 +1,25 @@
+@media all and (max-width:1117px) {
+    .oldAcTable{
+        width: 80% !important;
+        /* color: red; */
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+    .settingsLabel{
+        width: 200%;
+    }
+    .ClientDataTable{
+        /* background-color: red; */
+        margin-left: 0;
+    }
+    .tableField{
+        /* background-color: green; */
+        position: relative;
+        left: 10%;
+        width: 60% !important;
+    }
+    .settingsImgField{
+        margin-left: -30%;
+        position: relative;
+    }
+}

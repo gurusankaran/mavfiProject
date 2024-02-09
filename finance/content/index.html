@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="headerField">
+        <div class="company">
+            <div class="companySubName">Finance </br><span class="companyName">Mavro</span></div>
+        </div>
+
+        <div class="chitTypeSelection">
+            <select class="selectBox chitType">
+                <option value="daily">Daily</option>
+                <option value="week">Week</option>
+                <option value="month">Month</option>
+            </select>
+            <div class="selectIcon">
+                <i class="fa fa-caret-down"></i>
+            </div>
+        </div>
+
+        <div class="headerOptions">
+            <button class="largeScreen newAccountBtn1">New A/C</button>
+            <button class="largeScreen logout1">Log Out</button>
+            <button class="moreOption">More</button>
+            <div class="dropDownOption">
+                <button class="smallScreen newAccountBtn2">New A/C</button>
+                <button class="oldAccountBtn">Old A/C</button>
+                <button class="dailyCreditsBtn" onclick="dailyCreditBtnFunction()">Today Credits</button>
+                <button class="settingsBtn">Settings</button>
+                <button class="smallScreen logout2">Log Out</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="payTableField">
+    <div class="searchNameLabel"><input class="searchNameField" placeholder="Search Name" type="text"></div>
+
+        <div class="table-responsive loadingDemo payTable">
+            <table class="table mobileTable">
+                <thead class="tableHead">
+                    <th>pay</th>
+                    <th>Name</th>
+                    <th class="payInput payInputLabel">Amount</th>
+                    <th>Total Amount</th>
+                    <th class="details">More</th>
+                </thead>
+                <tbody class="tableBody loadingTable">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <form method="post" class="newACForm blurEffect">
+        <div class="newAccountLabel">
+            <div class="holderNameLabel">Name</div>
+            <div class="holderName"><input type="name" class="holderNameInput"></div>
+            <div class="holderCreditDate">Date</div>
+            <div class="holderCreditDate"><input class="holderCreditDateInput" type="date"></div>
+            <div class="holderAmountLabel">Amount</div>
+            <div class="holderAmount"><input class="holderAmountInput" value="10000" type="number"></div>
+            <div class="holderInterestLabel">Interest</div>
+            <div class="holderInterest"><input class="holderInterestInput" value="15" type="number"></div>
+            <div class="holderChitTypeLabel">
+                <select class="holderChitTypeInput">
+                    <option value="daily">Daily</option>
+                    <option value="week">Week</option>
+                    <option value="month">Month</option>
+                </select>
+                <span class="fa fa-caret-down"></span>
+            </div>
+            <div class="createHolderLabel"><button class="createHolderBtn">Create A/C</button></div>
+            <div class="messageDisplay"></div>
+        </div>
+    </form>
+
+
+    <div class="dailyCredits table-responsive loadingDemo" hidden>
+       <table class="table">
+            <thead>
+                <tr>
+                    <th>Update</th>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th>Total Amount</th>
+                    <th>More</th>
+                </tr>
+            </thead>
+        <tbody class="dailyCreditsBody loadingTable">
+                
+        </tbody>
+       </table>
+    </div>
+    
+
+    <div class="conformationContainer" hidden>
+        <div class="conformationTextLabel conformationNameLabel"><label>Name:</label><label class="conformationText conformationName"></label></div>
+        <div class="conformationTextLabel conformationAmountLabel"><label>Amount:</label><label class="conformationText conformationAmount"></label></div>
+        <div class="conformationLabel cancelLabel"><button class="conformationBtn cancelBtn ">Cancel</button></div>
+        <div class="conformationLabel doneLabel"><button class="conformationBtn doneBtn">Done</button></div>
+    </div>
+
+</body>
+<script src="./script.js"></script>
+<script src="./src/index.js"></script>
+
+
+</html>

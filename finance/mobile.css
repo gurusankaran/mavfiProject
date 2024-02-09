@@ -1,0 +1,25 @@
+@media all and (max-width:1117px) {
+    .loginContainer{
+        margin-right: 50%;
+        transform: translate(50%);
+        width: 350px;
+    }
+    .verticalLine{
+        display: none;
+    }
+    .regContainer{
+        width: 350px;
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+    .regContainer .containers{
+        /* background-color: red; */
+        margin-left: 46%;
+    }
+    .SectionPara{
+        display: none;
+    }
+    .displayMsg,.displayMsgLogin{
+        width: 330px;
+    }
+}

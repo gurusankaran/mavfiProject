@@ -1,0 +1,29 @@
+.table-responsive{
+    width: 80% !important;
+    border-radius: 10px;
+    margin-top: 100px;
+    border: 1px solid black;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+h3{
+    text-decoration: underline;
+}
+.moreDetailsHeading{
+    margin-left: 10%;
+}
+.DetailsBackBtn{
+    /* background-color: red; */
+    border: none;
+    border-radius: 10px;
+    padding: 7px;
+    margin-left: 10%;
+    margin-top: 20px;
+    transition: all 0.5s;
+}
+.DetailsBackBtn:hover{
+    background-color: black;
+    color: white;
+}

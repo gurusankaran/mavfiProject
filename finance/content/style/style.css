@@ -1,0 +1,342 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Mohave&family=Playfair+Display:ital,wght@1,500&family=Roboto:wght@100&display=swap'); */
+
+body {
+    font-family: 'Ephesis', cursive;
+    font-family: 'Mohave', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.headerField {
+    margin: 0;
+    height: 200px;
+    margin-bottom: 150px;
+    width: 100%;
+    border-radius: 0px 0px 80px 0px;
+    background-color: #72d9f3;
+    filter: drop-shadow(10px 10px 10px rgb(67, 66, 66));
+}
+
+.companySubName {
+    color: rgb(110, 110, 110);
+    font-size: 75px;
+    height: 200px;
+    position: relative;
+    font-family: sans-serif;
+    top: 50px;
+    /* filter: drop-shadow(20px 20px 7px white); */
+}
+
+.companyName {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    padding: 10px;
+    border-radius: 15px;
+    margin-left: 260px;
+    top: 45px;
+}
+
+.company {
+    margin-bottom: 100px;
+    width: 400px;
+    padding: 30px;
+    border-radius: 0 150px 40px 0;
+    position: absolute;
+    top: -10px;
+    filter: drop-shadow(10px 10px 10px black);
+    background-color: #02c9fb;
+    /* background-color: red; */
+
+}
+
+table {
+    border: 1px solid black;
+    padding: 20px;
+    width: 80% !important;
+    margin-left: 10%;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 200px !important;
+}
+
+td,
+th {
+    padding: 10px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+table td:first-child,
+th:first-child {
+    border-left: none;
+    width: 0;
+}
+
+input[type="number"],input {
+    width: 200px;
+    border: none;
+    border-bottom: 3px solid black;
+    outline: none;
+    font-size: 20px;
+    transition: all 0.5s;
+    margin-bottom: 10px;
+}
+
+
+table tr {
+    height: 50px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.Btn {
+    background-color: #72D9F3;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #002439;
+    cursor: pointer;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: all 0.5s;
+}
+
+.Btn:hover {
+    box-shadow: 0px 0px 5px black;
+    background-color: #02C9FB;
+}
+
+.details {
+    width: 0;
+}
+
+.loadingAnimation {
+    /* background-color: #c7c2c2; */
+    background: linear-gradient(120deg,
+            #e5e5e5 30%,
+            #f0f0f0 38%,
+            #f0f0f0 40%,
+            #e5e5e5 48%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    animation: load 2s infinite;
+    border-radius: 10px;
+    width: 80%;
+    height: 20px;
+    margin-left: 10%;
+}
+
+@keyframes load {
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+.chitTypeSelection {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    top: 100px;
+    width: 150px;
+    height: 35px;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+select {
+    border: none;
+    appearance: none;
+    height: 100%;
+    color: white;
+    padding: 0 30px 0 15px;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    font-size: 20px;
+}
+
+.selectIcon {
+    width: 50px;
+    height: 0px;
+    position: relative;
+    font-size: 25px;
+    cursor: pointer;
+    top: -15px;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerOptions {
+    position: absolute;
+    top: 100px;
+    z-index: 1 !important;
+    right: 10px;
+}
+
+.headerOptions button {
+    margin-right: 50px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #F3E5CA;
+    transition: all 0.5s;
+}
+
+.headerOptions button:hover {
+    background-color: grey;
+    color: white;
+}
+
+.dropDownOption {
+    flex-direction: column;
+    width: 50%;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    transition: all 0.5s;
+}
+
+.dropDownOption button {
+    border-radius: 0;
+}
+
+.smallScreen {
+    display: none;
+}
+.newAccountLabel{
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    /* background-color: red; */
+    font-size: 20px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    font-weight: bolder;
+    z-index: -1 !important;
+    margin-bottom: 100px;
+}
+.holderNameInput{
+    height: 20px;
+    font-size: 18px;
+}
+.createHolderBtn{
+    background-color: #F3E5CA;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.createHolderBtn:hover{
+    background-color: #b18937;
+    color: white;
+}
+.createHolderLabel{
+    /* background-color: red; */
+    text-align: center;
+}
+
+.messageDisplay{
+    font-size:15px;
+    text-align:center;
+    margin-top:20px;
+    color:red;
+}
+.holderChitTypeLabel{
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.holderChitTypeInput{
+    outline: none;
+    text-align: left;
+    width: 80%;
+}
+.conformationContainer{
+    /* background-color: #014c5e; */
+    background-color: white;
+    box-shadow: 0 0px 100px red;
+    width: 500px;
+    height: 300px;
+    border-radius: 50px;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.blurEffect{
+    pointer-events: none;
+    user-select: none;
+    filter: blur(20px);
+}
+.conformationLabel{
+    /* background-color: red; */
+    display: inline;
+    position: relative;
+    top:180px;
+    left:50px;
+}
+.doneBtn{
+    float: right;
+    margin-right: 90px;
+}
+.conformationBtn{
+    background-color:#02C9FB;
+    border-radius: 10px;
+    border:none;
+    padding:10px;
+    width:70px;
+    cursor:pointer;
+    transition: all 0.5s;
+}
+.conformationBtn:hover{
+    transform: translateY(10%);
+    background-color: #02C9FB;
+    color: white;
+}
+.conformationTextLabel{
+    background-color: black;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    top: 20%;
+    color: white;
+}
+.conformationText{
+    margin-left: 40px;
+    font-size: 30px;
+    text-decoration: underline white;
+}
+.searchNameLabel{
+    margin-left: 15%;
+    margin-bottom: 30px;
+    height: 40px;
+    width: 250px;
+}
+.searchNameField{
+    border: 1px solid black;
+    border-radius: 10px;
+    height: inherit;
+    width: inherit;
+}
+
+/* .dailyCredits thead{
+    
+} */

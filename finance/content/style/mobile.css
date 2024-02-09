@@ -1,0 +1,70 @@
+@media all and (max-width:1117px) {
+    .headerField{
+        width: 100%;
+        margin-bottom: 70px;
+    }
+    .company{
+        width: 180px;
+        height: 130px;
+    }
+    .companySubName{
+        font-size: 30px;
+        position: absolute;
+        left: 10px;
+    }
+    .companyName{
+        font-size: 10px;
+        position: absolute;
+        margin-left: 30px;
+        top: 50px;
+    }
+    .largeScreen{
+        display: none;
+    }
+    .smallScreen{
+        display: block;
+    }
+    .dropDownOption{
+        width: 150%;
+        top: 85px;
+    }
+    .selectBox{
+        font-size: 15px;
+    }
+    .chitTypeSelection{
+        transition: all 0.5s;
+        width: 100px;
+        position: absolute;
+        margin-top: 50px;
+        left: 15px;
+        transform: none;
+    }
+    .moreOption{
+        margin-top: 50px;
+    }
+    table{
+        font-size: 12px;
+        margin-right: 10%;
+        margin-left: 10% !important;
+        width: 80%;
+        height: 10px;
+    }
+    .mobileTable{
+        margin-left: 10%;
+        margin-left: 10px;
+    }
+    /* .tableBody{ */
+        /* background-color: red; */
+        /* width: 100px !important; */
+        /* margin-left: 50%;
+        transform: translate(-50%); */
+    /* } */
+    .payInputLabel{
+        position: relative;
+        /* width: 50px; */
+    }
+    .newAccountLabel{
+        /* background-color: red; */
+        margin-right: 0;
+    }
+}

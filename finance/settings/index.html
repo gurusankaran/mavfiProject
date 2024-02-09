@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/mobile.css">
+
+</head>
+
+<body>
+
+    <div class="settingHeading">Settings</div>
+
+    <div class="settingsLabel">
+        <div class="settingsImgField">
+            <img class="settingsImg skeleton">
+        </div>
+
+        <div class="tableField loadingTable">
+            <table class="settingsTable table">
+                <tr>
+                    <td class="settingsField">Name:</td>
+                    <td class="settingsInput settingsName skeleton"></td>
+                </tr>
+                <tr>
+                    <td class="settingsField">Email:</td>
+                    <td class="settingsInput skeleton settingsEmail"></td>
+                </tr>
+                <tr>
+                    <td class="settingsField">Password:</td>
+                    <td class="settingsInput skeleton settingsPassword"></td>
+                </tr>
+                <tr>
+                    <td class="settingsField">Mobile:</td>
+                    <td class="settingsInput skeleton settingsMobile"></td>
+                </tr>
+                <tr>
+                    <td class="settingsField">Total Client:</td>
+                    <td class="settingsInput skeleton settingsClient"></td>
+                </tr>
+                <tr>
+                    <td class="settingsBackBtn settingsBtn"><button>Back</button></td>
+                    <td class="settingsClientBtn settingsClientShowLabel settingsBtn"><button class="settingsClientShowBtn">See Clients</button></td>
+                    <td class="settingsClientBtn settingsClientHideLabel settingsBtn" hidden><button class="settingsClientHideBtn">Hide Clients</button>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="table-responsive">
+            <table class="ClientDataTable" hidden>
+                <thead>
+                    <th>S.NO</th>
+                    <th>Name</th>
+                    <th>Amount Paid</th>
+                    <th>Total Amount</th>
+                    <th>Chit Type</th>
+                    <th>Interest</th>
+                    <th>Date</th>
+                    <th>More</th>
+                </thead>
+                <tbody class="clientDataBody">
+
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+
+
+    <div class="oldACLabel">
+        <div class="backLabel"><button class="backBtn">Back</button></div>
+
+        <div class="table-responsive">
+        <table class="oldAcTable oldAcTableNoEdited">
+        <thead class="oldAcHead">
+            <th>S.NO</th>
+            <th>Name</th>
+            <th>Amount Paid</th>
+            <th>Total Amount</th>
+            <th>Chit Type</th>
+            <th>Interest</th>
+            <th>Date</th>
+        </thead>
+        <tbody class="oldAcBody">
+
+        </tbody>
+        </table>
+    </div>
+    </div>
+
+
+
+</body>
+<script src="./script.js"></script>
+<script src="./src/index.js"></script>
+
+</html>
